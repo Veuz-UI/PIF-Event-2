@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invoice</title>
+</head>
+
+<style>
+
+td, th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:first-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<body>
+
+    <div style="width: 700px; margin: auto; overflow: hidden; border: 1px solid #dddddd;">
+        <div style="display: flex; justify-content: space-between;background-color: #002554; padding: 30px;">
+            <img style="width: 150px;" src="assets/logo-main.png" alt="">
+            <h4 style="color: white; margin: 0; font-size: 30px;">Invoice</h4>
+        </div>
+
+        <div style="padding: 20px;">
+            <h4 style="font-size: 23px; font-size: 23px; margin: 10px 0px;">Invoice to:</h4>
+
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="font-size: 23px;">
+                    <h5 style="margin: 0;">Maria John</h5>
+                    <h5 style="margin: 0;margin-top: 5px !important;">08086215368</h5>
+                </div>
+                <div>
+                    <img style="margin: 0px 80px; width: 100px;" src="assets/qr.webp" alt="">
+                </div>
+                <div style="font-size: 23px;  text-align: left;word-wrap: break-word; overflow-wrap: break-word; hyphens: auto;">
+                    <h5 style="margin: 0;font-weight: 500;"><span style="font-weight: 700; margin-right: 5px">Ticket ID:</span>12460</h5>
+                    <h5 style="margin: 0;font-weight: 500; margin-top: 5px !important;"><span style="font-weight: 700;margin-right: 5px;">Invoice Date:</span>29/08/2024</h5>
+                    <h5 style="margin: 0;font-weight: 500; margin-top: 5px !important;"><span style="font-weight: 700;margin-right: 5px;">Transaction ID:
+                        </span>cs_test_a1kj8rR4GKQEbvn8x93sI6i0SbHplQ2yxNj7JkN2XIIHIUAPfJvhK5MpnM</h5>
+                        <h5 style="margin: 0;font-weight: 500; margin-top: 5px !important;"><span style="font-weight: 700;margin-right: 5px;">Payment Mode:</span>STRIPE</h5>
+                </div>
+            </div>
+    
+    
+            <div style="margin-top: 30px;">
+                <table style="border-collapse: collapse;width: 100%;">
+                    <tr style="    background-color: #002554;
+                    border: 1px solid #fff;
+                    color: #fff;">
+                      <th>SL.</th>
+                      <th>Item Description </th>
+                      <th>Price</th>
+                      <th>Qty.</th>
+                      <th>Line Amount</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Guest </td>
+                      <td>0.0 </td>
+                      <td>1  </td>
+                      <td>0.0</td>
+                    </tr>
+                  </table>
+            </div>
+    
+            <div style="display: flex; justify-content: end; margin-top: 20px;">
+                <div style="font-size: 23px;  text-align: left;word-wrap: break-word; overflow-wrap: break-word; hyphens: auto;">
+                    <h5 style="margin: 0;font-weight: 500;"><span style="font-weight: 700; margin-right: 5px">Paid Amount:</span> 0.0</h5>
+                    <h5 style="margin: 0;font-weight: 500; margin-top: 5px !important;"><span style="font-weight: 700;margin-right: 5px;">Due Amount: 
+                        </span> 0.0</h5>
+                        <h5 style="    margin: 0;font-weight: 500; margin-top: 10px !important;font-size: 25px;"><span style="font-weight: 700;margin-right: 5px;">Total Amount:</span>0.0 </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

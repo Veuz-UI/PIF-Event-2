@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIF</title>
+    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/bootstarp/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/webfont/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/custom-style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.1.3/build/css/intlTelInput.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/super-classes.css">
+    <link rel="shortcut icon" href="assets/images/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css">
+</head>
+
+<body>
+    <section class="main-container">
+      <div class="logo-container">
+         <div class="container">
+            <div class="image-container">
+               <img src="assets/images/header-logo.webp" alt="" class="d-block header-logo">
+               <img src="assets/images/logo-main.png" alt="" class="d-block footer-logo">
+           </div>
+         </div>
+     </div>
+
+     <div class="example">
+      <button id="b1">A basic message</button>
+      <button id="b2">A title with a text under</button>
+      <button id="b3">A success message!</button>
+      <button id="b4">A warning message, with a function attached to the "Confirm"-button...</button>
+      <button id="b5">... and by passing a parameter, you can execute something else for "Cancel".</button>
+      <button id="b6">A message with a custom icon</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- popup -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <div></div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                </div>
+                <div class="modal-body">
+                    <div class="success-animation">
+                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" /></svg>
+                    </div>
+                    <p>
+                        Succesfully Submited!
+                    </p>
+                    <div class="qr-code-div">
+                        <img src="assets/images/qr-code.webp" alt="" class="img-fluid">
+                    </div>
+                    <h5 class="modal-ticket-id">ID: 8524125</h5>
+                </div>
+                <div class="modal-footer">
+                    <a href="agenda.html">
+                        <button type="button" class="button3" data-bs-dismiss="modal">Close</button>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- close -->
+    </section>
+
+    <script src="assets/form-js/jquery-3.6.0.min.js"></script>
+    <!-- <script src="assets/js/gsap.min.js"></script> -->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/script-1.js"></script>
+    <script src="assets/f/bootstrap.min.js"></script>
+    <script src="assets/form-js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/49ccdaea81.js" crossorigin="anonymous "></script>
+    <script src="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.1.3/build/js/intlTelInput.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script> -->
+
+
+    <script>
+      document.getElementById('b1').onclick = function(){
+	swal("Here's a message!");
+};
+
+document.getElementById('b2').onclick = function(){
+	swal("Here's a message!", "It's pretty, isn't it?")
+};
+
+document.getElementById('b3').onclick = function(){
+	swal("Good job!", "You clicked the button!", "success");
+};
+
+document.getElementById('b4').onclick = function(){
+	swal({
+		title: "",
+		text: "You will not be able to recover this imaginary file!",
+		type: "error",
+		// showCancelButton: true,
+		confirmButtonColor: '#1D8874',
+		// confirmButtonText: 'Yes, delete it!',
+		closeOnConfirm: true,
+		//closeOnCancel: false
+	},
+	function(){
+		// swal("Deleted!", "Your imaginary file has been deleted!", "success");
+	});
+};
+
+document.getElementById('b5').onclick = function(){
+	swal({
+		title: "Are you sure?",
+		text: "This session's time overlaps with another session on the same day. You cannot select both",
+		type: "warning",
+		showCancelButton: true,
+		confirmButtonColor: '#DD6B55',
+		// confirmButtonText: 'Yes, delete it!',
+		// cancelButtonText: "No, cancel plx!",
+		closeOnConfirm: false,
+		closeOnCancel: false
+	},
+	function(isConfirm){
+    if (isConfirm){
+      swal("Deleted!", "Your imaginary file has been deleted!", "success");
+    } else {
+      swal("Cancelled", "Your imaginary file is safe :)", "error");
+    }
+	});
+};
+
+document.getElementById('b6').onclick = function(){
+	swal({
+		title: "Sweet!",
+		text: "Here's a custom image.",
+		imageUrl: 'https://i.imgur.com/4NZ6uLY.jpg'
+	});
+};
+    </script>
+   
+</body>
+
+</html>
