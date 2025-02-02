@@ -1,0 +1,104 @@
+
+
+body{
+    font-family: 'fund_regularregular';
+}
+
+.badge-main-div{
+    width: 397px;
+    margin: auto;
+    min-height: 550px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: #F5EDE1;  */
+}
+
+.header-logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logos img {
+    width: 120px;
+}
+
+.badge-body{
+    padding: 30px 30px 0px 30px;
+    position: relative;
+
+}
+
+.badge-body::after{
+    position: absolute;
+    height: 530px;
+    width: 650px;
+    top: -95px;
+    left: -136px;
+    border-radius: 100%;
+    border: 10px solid #133932;
+    content: "";
+    background: #F2FEF6 !important;
+    z-index: 0;
+}
+
+.pos-top{
+    position: relative;
+    z-index: 2;
+}
+
+.brdr-right{
+    border-right: 1px solid #309e8c;
+    padding-right: 50px;
+}
+
+.info {
+    margin-top: 85px;
+}
+
+
+.info h6{
+    font-size: 16px;
+    font-family: 'fundlight';
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #035646;
+    font-weight: 500;
+}
+
+.green{
+    color: #133932 !important;
+    font-weight: 700 !important;
+}
+
+.qr-code img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+    
+}
+
+.footer{
+    height: 130px;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #035646;
+    position: relative;
+    z-index: -1;
+}
+
+.title{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 55px;
+    font-family: 'fundmedium';
+    text-transform: uppercase;
+}
